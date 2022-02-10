@@ -63,6 +63,7 @@
   .header-menu {
     flex-direction: column;
     gap: 10px;
+    text-align: end;
   }
 }
 @media (max-width: 900px) {
@@ -79,7 +80,8 @@
   }
 
   .header-menu {
-    gap: 40px 60px;
+    gap: 10px;
+    text-align: center;
   }
 
   .header-menu a {
@@ -88,5 +90,15 @@
 
   .header-menu li::after {
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin-bottom: 0;
+  }
+
+  .header-menu {
+    gap: 10px;
   }
 }
