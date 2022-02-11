@@ -36,6 +36,10 @@
     grid-template-columns: 1fr;
   }
 
+  .contato-lista {
+    align-items: flex-start;
+  }
+
   .contato-lista li {
     text-align: start;
   }
