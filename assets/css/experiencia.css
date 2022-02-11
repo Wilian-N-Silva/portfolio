@@ -8,8 +8,6 @@
 
 .experiencia-titulo {
   grid-column: 1 / -1;
-
-  /* color: #f0f0f0; */
   color: #f0f0f0;
   width: 100%;
 }
@@ -125,10 +123,6 @@
     justify-items: center;
   }
 
-  .experiencia-titulo {
-    font-size: 3.5rem;
-  }
-
   .experiencia-texto {
     grid-row: 2;
     width: 100%;
@@ -180,11 +174,5 @@
   .experiencia-card-descricao-lista::before {
     content: "";
     display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .experiencia-titulo {
-    font-size: 2rem;
   }
 }
