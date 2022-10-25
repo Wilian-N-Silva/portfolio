@@ -1,165 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="description" content="Desenvolvedor Full Stack & Mobile">
-    <title>wilian.dev</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="preload" href="assets/css/main.min.css" as="style">
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.min.css'>
+
+    <title>Wilian | Front-end | UI Design</title>
+
+    <meta name="title" content="wilian.dev">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, nofollow">
+    <meta name="language" content="Portuguese">
+    <meta name="theme-color" content="#3948b2">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="site title">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="site title">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='assets/style/main.min.css'> -->
 </head>
 
 <body>
-
-    <header class="container header">
-        <div class="logo">
-            <img src="assets/img/logo.svg" alt="wilian.dev" width="259" height="55">
-        </div>
-        <nav>
-            <ul class="header-menu">
-                <li class="efeito-linha"><a href="#experiencia">Experiência</a></li>
-                <li class="efeito-linha"><a href="#formacao">Formação</a></li>
-                <li class="efeito-linha"><a href="#contato">Contato</a></li>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="">
+            </div>
+            <button type="button" id="btn-navigation-toggle">
+                <img src="./assets/icons/menu-2.svg" alt="">
+            </button>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+            <div class="options">
+                <button type="button" id="btn-language-selector"><span>PT</span> / <span>EN</span></button>
+                <button type="button" id="btn-theme-selector">
+                    <img src="./assets/icons/sun.svg" alt="">
+                </button>
+            </div>
         </nav>
     </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="texts">
+                    <h1>Olá,</br>sou <span>Wilian<span></h1>
+                    <p>um desenvolvedor front-end e UI designer<br>situado em São Paulo, Brasil</p>
+                    <a href="#contato">Entre em contato</a>
+                </div>
+                <div class="scroll-down">
+                    <div class="icon">
+                        <img src="./assets/icons/mouse.svg" alt="">
+                    </div>
+                    <span>Desça a página</span>
+                </div>
+            </div>
+        </section>
+        <section id="servicos">
+            <div class="container">
+                <div class="title">
+                    <h2>Serviços</h2>
+                    <h3>O que faço e gosto de fazer!</h3>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="icon">
+                            <img src="./assets/icons/brush.svg" alt="">
+                        </div>
+                        <h4>UI Design</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="./assets/icons/dev.svg" alt="">
+                        </div>
+                        <h4>Desenvolvimento <wbr>front-end</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <div class="title">
+                    <h2>Portfólio</h2>
+                    <h3>Meus projetos ou nos quais eu participei!</h3>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="preview">
+                            <img src="./assets/icons/brush.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="texts">
+                                <h4>Projeto</h4>
+                                <h5>Atividade</h5>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.</p>
+                                <span>Em colaboração com: Nome</span>
+                            </div>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Visite o site</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="load-more">
+                    <button>Veja mais projetos</button>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="container">
+                <div class="title">
+                    <h2>Sobre</h2>
+                </div>
+                <div class="content">
+                    <div class="content-column">
+                        <div>
+                            <h3>Quem sou eu?</h3>
+                            <p>Nascido em Minas Gerais e criado em São Paulo, sempre fui apaixonado por tecnologia e por
+                                tentar criar algo novo.</p>
+                            <p>Formado em Informática pela ETEC de Embu e Ciência da Computação, continuo meus estudos,
+                                focado em desenvolvimento front-end e caminhando para o UI Design, onde acredito que são
+                                duas áreas que caminham lado a lado.</p>
+                        </div>
+                        <div>
+                            <h3>Tecnologias que conheço</h3>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <img src="./assets/icons/placeholder.svg" alt="">
+                                    </div>
+                                    <span>Tech</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>O que estou estudando</h3>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <img src="./assets/icons/placeholder.svg" alt="">
+                                    </div>
+                                    <span>Tech</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Ferramentas que eu uso</h3>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <img src="./assets/icons/placeholder.svg" alt="">
+                                    </div>
+                                    <span>Tech</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-column">
+                        <div>
+                            <h3>Minha tragetória nos estudos</h3>
+                            <ul>
+                                <li>
+                                    <h4>Titulo</h4>
+                                    <h5>Local</h5>
+                                    <div class="timespan">
+                                        <div class="icon">
+                                            <img src="./assets/icons/calendar.svg" alt="">
+                                        </div>
+                                        <span>2018 - 2022</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="title">
+                    <h2>Entre em contato</h2>
+                </div>
+                <div class="content">
+                    <div class="content-column">
+                        <div class="texts">
+                            <h3>Vamos juntos criar o projeto dos seus sonhos</h3>
+                        </div>
+                        <div class="social">
+                            <h4>Me encontre também em outras plataformas</h4>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <div class="icon">
+                                            <img src="./assets/icons/placeholder.svg" alt="">
+                                        </div>
+                                        <span>Tech</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-column">
+                        <form>
 
-    <main class="container introducao">
-        <div class="introducao-texto">
-            <h1>Desenvolvedor<br>Front-end
-                <!-- &<br>Mobile -->
-            </h1><span>.</span>
-        </div>
-        <img src="assets/img/dev.svg" alt="Simbologia de desenvolvimento" width="235" height="130">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <section class="container experiencia" id="experiencia">
-        <div class="experiencia-container">
-            <h2 class="section-titulo experiencia-titulo">Experiência</h2>
-            <div class="experiencia-historico">
-                <div class="experiencia-periodo">
-                    <span class="experiencia-periodo-ano">2022</span>
-                    <div class="experiencia-lista">
-                        <div class="experiencia-card">
-                            <h3 class="experiencia-card-titulo">Portfólio</h3>
-                            <span class="experiencia-card-tipo">Projeto Pessoal</span>
-                            <div class="experiencia-card-descricao">
-                                <p class="experiencia-card-descricao-texto">
-                                    Aplicativo para acompanhamento diário de tarefas e atividades básicas relacionadas a
-                                    saúde e bem-estar.
-                                    <br>
-                                    Desenvolvido em Flutter e consumo de API própria desenvolvida em PHP.
-                                </p>
-                                <ul class="experiencia-card-descricao-lista">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="experiencia-periodo">
-                    <span class="experiencia-periodo-ano">2021</span>
-                    <div class="experiencia-lista">
-                        <div class="experiencia-card">
-                            <h3 class="experiencia-card-titulo">The Walking Pets</h3>
-                            <span class="experiencia-card-tipo">Projeto acadêmico</span>
-                            <div class="experiencia-card-descricao">
-                                <p class="experiencia-card-descricao-texto">
-                                    Um projeto que tem como premissa, facilitar a adoção de animais domésticos, nos
-                                    quais foram cadastrados através de doadores como ONGs ou pessoas físicas que desejam
-                                    doar seus pets. Além disso, o projeto tem como objetivo secundário, auxiliar tutores
-                                    de pets a encontrarem seus animais perdidos, através de anúncio feito por ele ou por
-                                    terceiros que o tenham encontrado algum animal em situação de rua
-                                </p>
-                                <ul class="experiencia-card-descricao-lista">
-                                    <li>Flutter</li>
-                                    <li>Hasura</li>
-                                    <li>Firebase</li>
-                                    <li>Consumo de API</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="experiencia-card">
-                            <h3 class="experiencia-card-titulo">To-Do List
-                            </h3>
-                            <span class="experiencia-card-tipo">Projeto acadêmico</span>
-                            <div class="experiencia-card-descricao">
-                                <p class="experiencia-card-descricao-texto">
-                                    Projeto simples de To-Do List, inicialmente orientado em sala de aula, mas que foi
-                                    repensado para suprir as necessidades do docente que ministrava as aulas e sua API.
-                                </p>
-                                <ul class="experiencia-card-descricao-lista">
-                                    <li>Flutter</li>
-                                    <li>PHP</li>
-                                    <li>Consumo de API</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experiencia-texto">
-                Projetos de estudo relacionado a desenvolvimento, utilizando <strong>HTML</strong>,
-                <strong>CSS</strong>,
-                <strong>JavaScript</strong> e <strong>PHP</strong> para desenvolvimento <strong>Web</strong> e
-                <strong>Flutter</strong> para desenvolvimento <strong>Mobile</strong>.
-            </div>
-
-
-        </div>
-    </section>
-    <section class="formacao" id="formacao">
-        <div class="container formacao-container">
-            <h2 class="section-titulo formacao-titulo">Formação</h2>
-            <p class="formacao-texto">
-                Tendo minha primeira experiência com desenvolvimento na <strong>ETEC de Embu</strong>, sigo buscando
-                conhecimento para entrar no mercado e atuar fortemente, crescendo cada dia mais!
-            </p>
-            <div class="formacao-historico">
-                <div class="formacao-historico-formacoes">
-                    <div class="formacao-item">
-                        <span class="formacao-item-ano">2015-2016</span>
-                        <span class="formacao-item-tipo">Técnico</span>
-                        <h3 class="formacao-item-titulo">Técnico em Informática</h3>
-                        <span class="formacao-item-instituicao">ETEC de Embu</span>
-                    </div>
-                    <div class="formacao-item">
-                        <span class="formacao-item-ano">2017-2021</span>
-                        <span class="formacao-item-tipo">Bacharel</span>
-                        <h3 class="formacao-item-titulo">Ciência da Computação</h3>
-                        <span class="formacao-item-instituicao">UNINOVE</span>
-                    </div>
-                </div>
-                <div class="formacao-historico-formacoes-extras">
-                    <h3>Cursos Extras</h3>
-                    <ul>
-                        <li>The Complete Flutter UI Masterclass | iOS, Android, & Web<span>7h</span></li>
-                        <li>UI Design para Iniciantes<span>34h</span></li>
-                        <li>HTML e CSS para Iniciantes<span>46h</span></li>
-                        <li>CSS Flexbox<span>6h</span></li>
-                        <li>CSS Grid Layout<span>10h</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="contato" id="contato">
-        <div class="container contato-container">
-            <h2 class="section-titulo contato-titulo">Contato</h2>
-            <ul class="contato-lista">
-                <li class="efeito-linha"><a href="mailto:contato@wilian.dev">E-mail</a> </li>
-                <li class="efeito-linha"><a href="https://github.com/wilian-n-silva/">Github</a></li>
-                <li class="efeito-linha"><a href="https://www.instagram.com/wilian.dev/">Instagram</a> </li>
-            </ul>
-        </div>
-
-    </footer>
-
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

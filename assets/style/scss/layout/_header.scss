@@ -1,0 +1,52 @@
+header {
+    padding: 1rem 0;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        ul,
+        .options {
+            display: none;
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+            padding: 1rem 0;
+            gap: 1rem;
+
+            li {
+                width: 100%;
+            }
+        }
+
+        &.expanded {
+
+            ul,
+            .options {
+                display: flex;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        nav {
+            #btn-navigation-toggle {
+                display: none;
+            }
+
+            ul,
+            .options {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                gap: 2rem;
+                align-items: center;
+            }
+        }
+
+    }
+}

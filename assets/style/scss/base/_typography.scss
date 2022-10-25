@@ -1,0 +1,21 @@
+/*
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 80px;
+line-height: 100%;
+/* or 80px */
+/*
+font-weight references:
+Thin                - 100
+ExtraLight          - 200
+Light               - 300
+Regular             - 400
+Medium              - 500
+SemiBold            - 600
+Bold                - 700
+ExtraBold           - 800
+Black               - 900
+*/
+
+$heading-1-lg: 600 5rem/1 $font-family-poppins;
