@@ -8,9 +8,13 @@
 @import 'base/helpers';
 
 // COMPONENTS
+@import 'components/button';
 
 // LAYOUT
 @import 'layout/header';
+@import 'layout/hero';
+@import 'layout/services';
+@import 'layout/portfolio';
 
 // PAGES
 @import 'pages/index';

@@ -1,10 +1,68 @@
 #hero {
-    h1 {
-        font: $heading-1-lg;
-        color: $oc-gray-1;
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    height: calc(100vh - 6rem);
 
-        span {
-            color: $oc-gray-4;
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .texts {
+                margin-bottom: 2rem;
+
+                h1 {
+                    color: $oc-gray-6;
+
+                    span {
+                        color: $oc-gray-9;
+                    }
+                }
+
+                p {
+                    max-width: 40ch;
+                }
+            }
+        }
+
+        .scroll-down {
+            display: flex;
+
+
+            &-content {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 1rem;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 50%;
+                    height: 1px;
+                    background-color: $oc-gray-7;
+                    top: 50%;
+                }
+
+                &::before {
+                    right: 100%;
+                }
+
+                &::after {
+                    left: 100%;
+                }
+            }
         }
     }
 }

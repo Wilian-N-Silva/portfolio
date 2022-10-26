@@ -1,11 +1,4 @@
 /*
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 80px;
-line-height: 100%;
-/* or 80px */
-/*
 font-weight references:
 Thin                - 100
 ExtraLight          - 200
@@ -18,4 +11,63 @@ ExtraBold           - 800
 Black               - 900
 */
 
+/*
+    Font shorthand 
+        font: font-style font-variant font-weight font-size/line-height font-family;
+*/
+
+$heading-1: 600 3rem/1 $font-family-poppins;
+$heading-2: 600 2rem/1 $font-family-poppins;
+
 $heading-1-lg: 600 5rem/1 $font-family-poppins;
+$heading-2-lg: 600 4rem/1 $font-family-poppins;
+
+$heading-3: 600 1.5rem/1 $font-family-poppins;
+$heading-4: 500 1.5rem/1 $font-family-poppins;
+$heading-5: 500 1.125rem/1 $font-family-poppins;
+
+$subtitle: 500 1rem/1.5 $font-family-poppins;
+$subtitle-lg: 500 1.5rem/1.5 $font-family-poppins;
+
+$body: 400 1rem/1.25 $font-family-inter;
+$body-sm: 400 .875rem/1 $font-family-inter;
+
+.heading-1 {
+    font: $heading-1;
+    margin-bottom: 1rem;
+}
+
+.heading-2 {
+    font: $heading-2;
+    margin-bottom: 1rem;
+}
+
+.heading-3 {
+    font: $heading-3;
+}
+
+.heading-4 {
+    font: $heading-4;
+}
+
+.heading-5 {
+    font: $heading-5;
+}
+
+.subtitle {
+    font: $subtitle;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .heading-1 {
+        font: $heading-1-lg
+    }
+
+    .heading-2 {
+        font: $heading-2-lg
+    }
+
+    .subtitle {
+        font: $subtitle-lg;
+    }
+}

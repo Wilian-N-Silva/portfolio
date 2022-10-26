@@ -1,0 +1,36 @@
+.button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 3rem;
+
+    background-color: $oc-gray-9;
+    border: 2px solid $oc-gray-9;
+    color: $oc-gray-1;
+    cursor: pointer;
+    transition: transform .3s, background-color .2s;
+
+    &:hover {
+        background-color: $oc-gray-8;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    &.button-secondary {
+        background-color: transparent;
+        color: $oc-gray-9;
+        border: 2px solid $oc-gray-9;
+
+        &:hover {
+            background-color: $oc-gray-9;
+            color: $oc-gray-1;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}
