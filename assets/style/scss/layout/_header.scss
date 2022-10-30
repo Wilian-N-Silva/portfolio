@@ -2,36 +2,47 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
+    z-index: 1;
 
-    nav {
+    & nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
 
-        ul,
-        .options {
+        & ul,
+        & .options {
             display: none;
             width: 100%;
+
+            & button {
+                & img {
+                    height: 40px;
+                }
+            }
         }
 
-        ul {
+        & ul {
             flex-direction: column;
             padding: 1rem 0;
             gap: 1rem;
 
-            li {
+            & li {
                 width: 100%;
             }
         }
 
-        &.expanded {
+        &.active {
 
-            ul,
-            .options {
+            & ul,
+            & .options {
                 display: flex;
             }
         }
+    }
+
+    &.bg-active {
+        background-color: #ffffff;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
@@ -40,8 +51,8 @@ header {
                 display: none;
             }
 
-            ul,
-            .options {
+            & ul,
+            & .options {
                 display: flex;
                 flex-direction: row;
                 width: auto;

@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    &__column {}
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    &__content {
+      grid-template-columns: 1fr 1fr;
+
+      &__column {}
+    }
+  }
+}

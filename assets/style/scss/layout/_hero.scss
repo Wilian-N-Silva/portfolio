@@ -4,7 +4,7 @@
     padding: 5rem 0;
     height: calc(100vh - 6rem);
 
-    .container {
+    & .container {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -12,29 +12,44 @@
         height: 100%;
         justify-content: space-between;
 
-        .content {
+        & .content {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            .texts {
+            & .texts {
                 margin-bottom: 2rem;
 
-                h1 {
+                & h1 {
                     color: $oc-gray-6;
 
-                    span {
+                    & span {
+                        position: relative;
                         color: $oc-gray-9;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background: url('/assets/img/line.svg');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            height: 1rem;
+                            width: 100%;
+                            left: 5%;
+                            top: 80%;
+
+                        }
                     }
                 }
 
-                p {
+                & p {
                     max-width: 40ch;
                 }
             }
         }
 
-        .scroll-down {
+        & .scroll-down {
             display: flex;
 
 
