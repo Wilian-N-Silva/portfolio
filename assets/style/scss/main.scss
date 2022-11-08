@@ -9,6 +9,8 @@
 
 // COMPONENTS
 @import 'components/button';
+@import 'components/badge';
+@import 'components/education';
 
 // LAYOUT
 @import 'layout/header';
@@ -16,6 +18,7 @@
 @import 'layout/services';
 @import 'layout/portfolio';
 @import 'layout/about';
+@import 'layout/footer';
 
 // PAGES
 @import 'pages/index';

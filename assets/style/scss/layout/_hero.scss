@@ -3,6 +3,7 @@
     align-items: center;
     padding: 5rem 0;
     height: calc(100vh - 6rem);
+    position: relative;
 
     & .container {
         position: relative;
@@ -21,11 +22,11 @@
                 margin-bottom: 2rem;
 
                 & h1 {
-                    color: $oc-gray-6;
+                    color: $colors-oc-gray-1;
 
                     & span {
                         position: relative;
-                        color: $oc-gray-9;
+                        color: $colors-brand-color-2-600;
 
                         &::after {
                             content: "";
@@ -66,7 +67,7 @@
                     content: "";
                     width: 50%;
                     height: 1px;
-                    background-color: $oc-gray-7;
+                    background-color: $colors-oc-gray-7;
                     top: 50%;
                 }
 

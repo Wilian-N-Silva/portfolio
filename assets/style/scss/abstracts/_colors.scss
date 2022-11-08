@@ -1,16 +1,46 @@
+$colors-neutral-white: #ffffff;
+$colors-neutral-black: #000000;
+
 // Yeun Open Color - 1.9.1 - Gray
-$oc-gray-1: #f1f3f5;
-$oc-gray-2: #e9ecef;
-$oc-gray-3: #dee2e6;
-$oc-gray-4: #ced4da;
-$oc-gray-5: #adb5bd;
-$oc-gray-6: #868e96;
-$oc-gray-7: #495057;
-$oc-gray-8: #343a40;
-$oc-gray-9: #212529;
+$colors-oc-gray-1: #f1f3f5;
+$colors-oc-gray-2: #e9ecef;
+$colors-oc-gray-3: #dee2e6;
+$colors-oc-gray-4: #ced4da;
+$colors-oc-gray-5: #adb5bd;
+$colors-oc-gray-6: #868e96;
+$colors-oc-gray-7: #495057;
+$colors-oc-gray-8: #343a40;
+$colors-oc-gray-9: #212529;
 
-$color-1-500: #0C1119;
-$color-2-500: #252B3D;
-$color-3-500: #43343B;
+$colors-brand-color-1-100: #2C3440;
+$colors-brand-color-1-200: #242B36;
+$colors-brand-color-1-300: #1C222D;
+$colors-brand-color-1-400: #141A23;
+$colors-brand-color-1-500: #0C1119;
+$colors-brand-color-1-600: #0C1017;
+$colors-brand-color-1-700: #0B0F15;
+$colors-brand-color-1-800: #0A0E13;
+$colors-brand-color-1-900: #0A0C11;
 
-$gradient-1: linear-gradient(45.06deg, $color-1-500 55.93%, $color-2-500 83.23%, $color-3-500 95.71%);
+$colors-brand-color-2-100: #FC8F8F;
+$colors-brand-color-2-200: #FB7F7F;
+$colors-brand-color-2-300: #FB7070;
+$colors-brand-color-2-400: #FA6161;
+$colors-brand-color-2-500: #FA5252;
+$colors-brand-color-2-600: #DB4848;
+$colors-brand-color-2-700: #BC3E3E;
+$colors-brand-color-2-800: #9C3333;
+$colors-brand-color-2-900: #7D2929;
+
+$colors-brand-color-3-100: #9EABC0;
+$colors-brand-color-3-200: #8696B0;
+$colors-brand-color-3-300: #6E81A0;
+$colors-brand-color-3-400: #556C90;
+$colors-brand-color-3-500: #3D5780;
+$colors-brand-color-3-600: #354C70;
+$colors-brand-color-3-700: #2E4160;
+$colors-brand-color-3-800: #263650;
+$colors-brand-color-3-900: #1F2C40;
+
+$gradient-bg: linear-gradient(0deg, $colors-brand-color-1-500 80.28%, $colors-brand-color-1-300 100%);
+$gradient-line-dark: linear-gradient(0deg, $colors-brand-color-1-500 80.28%, $colors-brand-color-1-300 100%);

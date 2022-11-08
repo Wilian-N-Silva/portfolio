@@ -1,11 +1,11 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_256_585)">
-<path d="M14 16L6 24L14 32" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34 16L42 24L34 32" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28 8L20 40" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip0_392_992)">
+<path d="M14 16L6 24L14 32" stroke="#FA5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34 16L42 24L34 32" stroke="#FA5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 8L20 40" stroke="#FA5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<clipPath id="clip0_256_585">
+<clipPath id="clip0_392_992">
 <rect width="48" height="48" fill="white"/>
 </clipPath>
 </defs>

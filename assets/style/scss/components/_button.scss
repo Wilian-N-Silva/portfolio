@@ -1,31 +1,54 @@
 .button {
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
 
-    background-color: $oc-gray-9;
-    border: 2px solid $oc-gray-9;
-    color: $oc-gray-1;
+    background-color: $colors-oc-gray-9;
+    border: 2px solid $colors-oc-gray-9;
+    color: $colors-oc-gray-1;
     cursor: pointer;
-    transition: transform .3s, background-color .2s;
 
     &:hover {
-        background-color: $oc-gray-8;
-        transform: scale(1.05);
+        background-color: $colors-oc-gray-8;
+        transition: background-color .3s;
+        // transform: scale(1.05);
     }
 
     &:active {
-        transform: scale(.95);
+        // transform: scale(.95);
     }
 
     &.button-secondary {
         background-color: transparent;
-        color: $oc-gray-9;
-        border: 2px solid $oc-gray-9;
+        color: $colors-oc-gray-9;
+        border: 2px solid $colors-oc-gray-9;
 
         &:hover {
-            background-color: $oc-gray-9;
-            color: $oc-gray-1;
+            background-color: $colors-oc-gray-9;
+            color: $colors-oc-gray-1;
+
+        }
+    }
+
+    &.button-secondary {
+        background-color: transparent;
+        color: $colors-oc-gray-9;
+        border: 2px solid $colors-oc-gray-9;
+
+        &:hover {
+            background-color: $colors-oc-gray-9;
+            color: $colors-oc-gray-1;
+        }
+    }
+
+    &.button-text {
+        background-color: transparent;
+        color: $colors-oc-gray-9;
+        border: none;
+
+        &:hover {
+            // background-color: $colors-oc-gray-9;
+            // color: $colors-oc-gray-1;
         }
     }
 

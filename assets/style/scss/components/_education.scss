@@ -1,0 +1,41 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2rem;
+    background-color: $colors-brand-color-1-700;
+    border: 2px solid $colors-brand-color-1-400;
+    width: 100%;
+
+    &__title {
+      font: $heading-4;
+      color: $colors-oc-gray-3;
+    }
+
+    &__subtitle {
+      font: $heading-5;
+      color: $colors-oc-gray-4;
+    }
+
+    &__timespan {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+
+      &__icon {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      &__time {
+        font: $body-sm;
+        color: $colors-oc-gray-4;
+      }
+    }
+  }
+}

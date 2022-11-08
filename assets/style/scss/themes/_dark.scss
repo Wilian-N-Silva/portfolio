@@ -1,0 +1,40 @@
+body {
+  &.dark {
+    color: $colors-oc-gray-1;
+    background: $gradient-bg;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('/assets/img/lines-bg.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 64px;
+      width: 100%;
+      height: 100%;
+      background-position-x: center;
+      z-index: -1;
+    }
+
+    .button {
+      background-color: $colors-brand-color-2-700;
+      color: $colors-oc-gray-1;
+
+      &:hover {
+        background-color: $colors-brand-color-2-800;
+      }
+
+      &.button-text {
+        background-color: transparent;
+        color: $colors-oc-gray-1;
+        border: none;
+
+        &:hover {
+          // background-color: $colors-oc-gray-9;
+          // color: $colors-oc-gray-1;
+        }
+      }
+
+    }
+  }
+}

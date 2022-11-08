@@ -13,6 +13,7 @@
             flex-direction: column;
             gap: 2rem;
 
+
             li {
                 display: flex;
                 gap: 2rem;
@@ -20,8 +21,8 @@
                 align-items: center;
                 width: 100%;
                 padding: 2rem;
-
-                border: 2px solid $oc-gray-5;
+                background-color: $colors-brand-color-1-700;
+                border: 2px solid $colors-brand-color-1-400;
 
                 .icon {
                     width: 2.5rem;

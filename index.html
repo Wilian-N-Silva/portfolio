@@ -1,249 +1,363 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<title>Wilian | Front-end | UI Design</title>
 
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta name="title" content="Wilian | Front-end | UI Design" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="index, nofollow" />
+		<meta name="language" content="Portuguese" />
+		<meta name="theme-color" content="#3948b2" />
 
-    <title>Wilian | Front-end | UI Design</title>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://wilian.dev" />
+		<meta property="og:title" content="Wilian | Front-end | UI Design" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
 
-    <meta name="title" content="wilian.dev">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, nofollow">
-    <meta name="language" content="Portuguese">
-    <meta name="theme-color" content="#3948b2">
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://wilian.dev" />
+		<meta property="twitter:title" content="Wilian | Front-end | UI Design" />
+		<meta property="twitter:description" content="" />
+		<meta property="twitter:image" content="" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="site title">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="assets/style/main.min.css"
+		/>
+	</head>
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="">
-    <meta property="twitter:title" content="site title">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:image" content="">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/style/main.min.css'>
-</head>
-
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="assets/img/logo.svg" alt="">
-            </div>
-            <button type="button" id="btn-navigation-toggle">
-                <img src="./assets/icons/menu-2.svg" alt="">
-            </button>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="options">
-                <button type="button" id="btn-language-selector"><span>PT</span> / <span>EN</span></button>
-                <button type="button" id="btn-theme-selector">
-                    <img src="./assets/icons/sun.svg" alt="">
-                </button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="container">
-                <div class="content">
-                    <div class="texts">
-                        <h1 class="heading-1">Olá,</br>sou <span>Wilian</span></h1>
-                        <p class="subtitle">um <b>desenvolvedor front-end</b> e <b>UI designer</b> <wbr>situado em São Paulo, Brasil
-                        </p>
-                    </div>
-                    <a class="button" href="#contato">Entre em contato</a>
-                </div>
-                <div class="scroll-down">
-                    <div class="scroll-down-content">
-                        <div class="icon">
-                            <img src="./assets/icons/mouse.svg" alt="">
-                        </div>
-                        <span>Desça a página</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="servicos">
-            <div class="container">
-                <div class="title">
-                    <h2 class="heading-2">Serviços</h2>
-                    <h3 class="heading-3">O que faço e gosto de fazer!</h3>
-                </div>
-                <ul class="list">
-                    <li>
-                        <div class="icon">
-                            <img src="./assets/icons/brush.svg" alt="">
-                        </div>
-                        <h4 class="heading-4">UI Design</h4>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <img src="./assets/icons/dev.svg" alt="">
-                        </div>
-                        <h4 class="heading-4">Desenvolvimento <wbr>front-end</h4>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="container">
-                <div class="title">
-                    <h2 class="heading-2">Portfólio</h2>
-                    <h3 class="heading-3">Meus projetos ou nos quais eu participei!</h3>
-                </div>
-                <ul class="list">
-                    <li>
-                        <div class="preview">
-                            <img src="./assets/img/placeholder.png" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="texts">
-                                <div class="title">
-                                    <h4>Projeto</h4>
-                                    <h5>Atividade</h5>
-                                </div>
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                                    amet.</p>
-                                <span>Em colaboração com: Nome</span>
-                            </div>
-                            <div class="links">
-                                <a class="button" href="#" target="_blank" rel="noopener noreferrer">Visite o site</a>
-                                <a class="button button-secondary" href="#" target="_blank"
-                                    rel="noopener noreferrer">Repositório</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="title">
-                    <h2 class="heading-2">Sobre</h2>
-                </div>
-                <div class="about__content">
-                    <div class="about__content__column">
-                        <div>
-                            <h3 class="heading-3">Quem sou eu?</h3>
-                            <p>Nascido em Minas Gerais e criado em São Paulo, sempre fui apaixonado por tecnologia e por
-                                tentar criar algo novo.
-                                </br>
-                                Formado em Informática pela ETEC de Embu e em Ciência da Computação, continuo meus
-                                estudos,
-                                focado em desenvolvimento front-end e caminhando para o UI Design, onde acredito que são
-                                duas áreas que caminham lado a lado.</p>
-                        </div>
-                        <div>
-                            <h3 class="heading-3">Tecnologias que conheço</h3>
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <img src="./assets/icons/placeholder.svg" alt="">
-                                    </div>
-                                    <span>Tech</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="heading-3">O que estou estudando</h3>
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <img src="./assets/icons/placeholder.svg" alt="">
-                                    </div>
-                                    <span>Tech</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="heading-3">Ferramentas que eu uso</h3>
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <img src="./assets/icons/placeholder.svg" alt="">
-                                    </div>
-                                    <span>Tech</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="about__content__column">
-                        <div>
-                            <h3 class="heading-3">Minha tragetória nos estudos</h3>
-                            <ul>
-                                <li>
-                                    <h4>Titulo</h4>
-                                    <h5>Local</h5>
-                                    <div class="timespan">
-                                        <div class="icon">
-                                            <img src="./assets/icons/calendar.svg" alt="">
-                                        </div>
-                                        <span>2018 - 2022</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section id="contato">
-            <div class="container">
-                <div class="title">
-                    <h2 class="heading-2">Entre em contato</h2>
-                </div>
-                <div class="content">
-                    <div class="content-column">
-                        <div class="texts">
-                            <h3 class="heading-3">Vamos juntos criar o projeto dos seus sonhos</h3>
-                        </div>
-                        <div class="social">
-                            <h4>Me encontre também em outras plataformas</h4>
-                            <ul>
-                                <li>
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
-                                        <div class="icon">
-                                            <img src="./assets/icons/github.svg" alt="">
-                                        </div>
-                                        <span>Github</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content-column">
-                        <form>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="./assets/scripts/main.js"></script>
-</body>
-
+	<body class="dark">
+		<header>
+			<nav class="container">
+				<div class="logo">
+					<img src="assets/img/logo.svg" alt="" />
+				</div>
+				<button type="button" id="btn-navigation-toggle">
+					<img src="./assets/icons/menu-2.svg" alt="" />
+				</button>
+				<ul>
+					<li><a class="button button-text" href="#servicos">Serviços</a></li>
+					<li><a class="button button-text" href="#portfolio">Portfólio</a></li>
+					<li><a class="button button-text" href="#sobre">Sobre</a></li>
+					<li><a class="button button-text" href="#contato">Contato</a></li>
+				</ul>
+				<div class="options">
+					<button class="button" type="button" id="btn-language-selector">
+						<span>PT</span> / <span>EN</span>
+					</button>
+					<!-- <button type="button" id="btn-theme-selector">
+						<img src="./assets/icons/sun.svg" alt="" />
+					</button> -->
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="hero">
+				<div class="container">
+					<div class="content">
+						<div class="texts">
+							<h1 class="heading-1">Olá,<br />sou <span>Wilian</span></h1>
+							<p class="subtitle">
+								um <b>desenvolvedor front-end</b> e <b>UI designer</b>
+								<wbr />situado em São Paulo, Brasil
+							</p>
+						</div>
+						<a class="button" href="#contato">Entre em contato</a>
+					</div>
+					<div class="scroll-down">
+						<div class="scroll-down-content">
+							<div class="icon">
+								<img src="./assets/icons/mouse.svg" alt="" />
+							</div>
+							<span>Desça a página</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="servicos">
+				<div class="container">
+					<div class="title">
+						<h2 class="heading-2">Serviços</h2>
+						<h3 class="heading-3">O que faço e gosto de fazer!</h3>
+					</div>
+					<ul class="list">
+						<li>
+							<div class="icon">
+								<img src="./assets/icons/brush.svg" alt="" />
+							</div>
+							<h4 class="heading-4">UI Design</h4>
+							<p>
+								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+								amet sint. Velit officia consequat duis enim velit mollit.
+								Exercitation veniam consequat sunt nostrud amet.
+							</p>
+						</li>
+						<li>
+							<div class="icon">
+								<img src="./assets/icons/dev.svg" alt="" />
+							</div>
+							<h4 class="heading-4">Desenvolvimento <wbr />front-end</h4>
+							<p>
+								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+								amet sint. Velit officia consequat duis enim velit mollit.
+								Exercitation veniam consequat sunt nostrud amet.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="portfolio">
+				<div class="container">
+					<div class="title">
+						<h2 class="heading-2">Portfólio</h2>
+						<h3 class="heading-3">Meus projetos ou nos quais eu participei!</h3>
+					</div>
+					<ul class="list">
+						<li>
+							<div class="preview">
+								<img src="./assets/img/placeholder.png" alt="" />
+							</div>
+							<div class="info">
+								<div class="texts">
+									<div class="title">
+										<h4>Projeto</h4>
+										<h5>Atividade</h5>
+									</div>
+									<p>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+									<span>Em colaboração com: Nome</span>
+								</div>
+								<div class="links">
+									<a
+										class="button"
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										>Visite o site</a
+									>
+									<a
+										class="button button-secondary"
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										>Repositório</a
+									>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<div class="title">
+						<h2 class="heading-2">Sobre</h2>
+					</div>
+					<div class="about__content">
+						<div class="about__content__column">
+							<div class="about__content__column__item">
+								<h3 class="heading-3">Quem sou eu?</h3>
+								<p>
+									Nascido em Minas Gerais e criado em São Paulo, sempre fui
+									apaixonado por tecnologia e por tentar criar algo novo.
+								</p>
+								<p>
+									Formado em Informática pela ETEC de Embu e em Ciência da
+									Computação, continuo meus estudos, focado em desenvolvimento
+									front-end e caminhando para o UI Design, onde acredito que são
+									duas áreas que caminham lado a lado.
+								</p>
+							</div>
+							<div class="about__content__column__item">
+								<h3 class="heading-3">Tecnologias que conheço</h3>
+								<ul>
+									<li class="badge">
+										<div class="icon">
+											<img src="./assets/icons/placeholder.svg" alt="" />
+										</div>
+										<span>Tech</span>
+									</li>
+								</ul>
+							</div>
+							<div class="about__content__column__item">
+								<h3 class="heading-3">O que estou estudando</h3>
+								<ul>
+									<li class="badge">
+										<div class="icon">
+											<img src="./assets/icons/placeholder.svg" alt="" />
+										</div>
+										<span>Tech</span>
+									</li>
+								</ul>
+							</div>
+							<div class="about__content__column__item">
+								<h3 class="heading-3">Ferramentas que eu uso</h3>
+								<ul>
+									<li class="badge">
+										<div class="icon">
+											<img src="./assets/icons/placeholder.svg" alt="" />
+										</div>
+										<span>Tech</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="about__content__column">
+							<div class="about__content__column__item">
+								<h3 class="heading-3">Minha tragetória nos estudos</h3>
+								<ul class="education">
+									<li class="education__item">
+										<h4 class="education__item__title">
+											Ciência da Computação
+										</h4>
+										<h5 class="education__item__subtitle">
+											Universidade IX de Julho
+										</h5>
+										<div class="education__item__timespan">
+											<div class="education__item__timespan__icon">
+												<img
+													src="./assets/icons/calendar-inverted.svg"
+													alt=""
+												/>
+											</div>
+											<span class="education__item__timespan__time">
+												2018 - 2022
+											</span>
+										</div>
+									</li>
+									<li class="education__item">
+										<h4 class="education__item__title">Informática</h4>
+										<h5 class="education__item__subtitle">ETEC de Embu</h5>
+										<div class="education__item__timespan">
+											<div class="education__item__timespan__icon">
+												<img
+													src="./assets/icons/calendar-inverted.svg"
+													alt=""
+												/>
+											</div>
+											<span class="education__item__timespan__time">
+												2018 - 2022
+											</span>
+										</div>
+									</li>
+									<li class="education__item">
+										<h4 class="education__item__title">UI Design</h4>
+										<h5 class="education__item__subtitle">UI Boost</h5>
+										<div class="education__item__timespan">
+											<div class="education__item__timespan__icon">
+												<img
+													src="./assets/icons/calendar-inverted.svg"
+													alt=""
+												/>
+											</div>
+											<span class="education__item__timespan__time">
+												2018 - 2022
+											</span>
+										</div>
+									</li>
+									<li class="education__item">
+										<h4 class="education__item__title">
+											UI Design para Iniciantes
+										</h4>
+										<h5 class="education__item__subtitle">Origamid</h5>
+										<div class="education__item__timespan">
+											<div class="education__item__timespan__icon">
+												<img
+													src="./assets/icons/calendar-inverted.svg"
+													alt=""
+												/>
+											</div>
+											<span class="education__item__timespan__time">
+												2018 - 2022
+											</span>
+										</div>
+									</li>
+									<li class="education__item">
+										<h4 class="education__item__title">
+											HTML e CSS para iniciantes
+										</h4>
+										<h5 class="education__item__subtitle">Origamid</h5>
+										<div class="education__item__timespan">
+											<div class="education__item__timespan__icon">
+												<img
+													src="./assets/icons/calendar-inverted.svg"
+													alt=""
+												/>
+											</div>
+											<span class="education__item__timespan__time">
+												2018 - 2022
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contato">
+				<div class="container">
+					<div class="title">
+						<h2 class="heading-2">Entre em contato</h2>
+					</div>
+					<div class="content">
+						<div class="content-column">
+							<div class="texts">
+								<h3 class="heading-3">
+									Vamos juntos criar o projeto dos seus sonhos
+								</h3>
+							</div>
+							<div class="social">
+								<h4>Me encontre também em outras plataformas</h4>
+								<ul>
+									<li>
+										<a
+											class="badge"
+											href="#"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<div class="icon">
+												<img src="./assets/icons/github.svg" alt="" />
+											</div>
+											<span>Github</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content-column">
+							<form></form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<img src="./assets/img/logo.svg" alt="" />
+				<span>Todos os direitos reservados - 2022</span>
+			</div>
+		</footer>
+		<script src="./assets/scripts/main.js"></script>
+	</body>
 </html>
