@@ -66,10 +66,6 @@ header {
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
-        &.bg-active {
-            background-color: transparent;
-        }
-
         nav {
             #btn-navigation-toggle {
                 display: none;
