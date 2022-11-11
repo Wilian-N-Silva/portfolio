@@ -2,6 +2,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: transparent;
+    transition: .3s;
 
     & nav {
         display: flex;
@@ -10,6 +12,7 @@ header {
         align-items: center;
         justify-content: space-between;
         color: $colors-oc-gray-1;
+        padding: 1rem 0;
 
         & .logo img {
             height: 64px;
@@ -59,10 +62,14 @@ header {
     }
 
     &.bg-active {
-        animation: toggleBg .3s forwards;
+        background-color: $colors-brand-color-1-500;
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
+        &.bg-active {
+            background-color: transparent;
+        }
+
         nav {
             #btn-navigation-toggle {
                 display: none;
