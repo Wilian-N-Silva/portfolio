@@ -6,7 +6,7 @@ body {
     &::after {
       content: "";
       position: absolute;
-      background: url('/assets/img/lines-bg.svg');
+      background: url('../img/lines-bg.svg');
       background-repeat: no-repeat;
       background-size: contain;
       top: 64px;

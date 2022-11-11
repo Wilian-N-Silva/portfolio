@@ -31,7 +31,7 @@
                         &::after {
                             content: "";
                             position: absolute;
-                            background: url('../../../img/line.svg');
+                            background: url('../img/line.svg');
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -52,7 +52,6 @@
 
         & .scroll-down {
             display: flex;
-
 
             &-content {
                 position: relative;
