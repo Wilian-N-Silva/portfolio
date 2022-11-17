@@ -11,8 +11,25 @@ header {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        color: $colors-oc-gray-1;
         padding: 1rem 0;
+        color: $colors-oc-gray-1;
+
+        & #btn-navigation-toggle {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            cursor: pointer;
+
+            & span {
+                background-color: $colors-oc-gray-1;
+                height: 4px;
+                border-radius: 4px;
+                width: 48px;
+                transition: .3s;
+            }
+        }
 
         & .logo img {
             height: 64px;
@@ -47,16 +64,23 @@ header {
             & .options {
                 display: flex;
             }
-        }
-    }
 
-    @keyframes toggleBg {
-        from {
-            background-color: transparent;
-        }
+            #btn-navigation-toggle {
+                & span {
+                    &:nth-child(1) {
+                        transform: translateY(16px) rotate(-45deg);
+                    }
 
-        to {
-            background-color: $colors-brand-color-1-500;
+                    &:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-16px) rotate(-45deg);
+                    }
+                }
+            }
+
 
         }
     }
@@ -80,34 +104,62 @@ header {
                 align-items: center;
             }
 
-            & ul {
-                & li {
-                    & a {
-                        position: relative;
+            & .options #btn-language-selector {
+                padding: 1rem 2rem;
+                background-color: transparent;
+                cursor: pointer;
+                color: $colors-oc-gray-5;
+                transition: .3s;
 
-                        &:hover {
-                            &::after {
-                                transform: scaleX(1);
-                                transform-origin: left;
-                            }
-                        }
+                & span {
+                    transition: .3s;
 
-                        &::after {
-                            content: "";
-                            width: 100%;
-                            height: 1px;
-                            background-color: $colors-oc-gray-1;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            transform: scaleX(0);
-                            transform-origin: right;
-                            transition: transform .3s ease-out;
-                        }
+                    &.active {
+                        color: $colors-oc-gray-1;
+                        font-weight: 700;
+                        font-size: 1.125rem;
                     }
                 }
             }
-        }
 
+            & ul li a {
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: $colors-oc-gray-1;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .3s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@keyframes hamburguer-menu-span-1 {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(16px);
+    }
+
+    100% {
+        transform: translateY(16px) rotate(-45deg)
     }
 }

@@ -5,8 +5,8 @@
 
     background-color: $colors-oc-gray-9;
     border: 2px solid $colors-oc-gray-9;
-    color: $colors-oc-gray-1;
     cursor: pointer;
+    color: $colors-oc-gray-1;
 
     &:hover {
         background-color: $colors-oc-gray-8;
@@ -30,16 +30,6 @@
         }
     }
 
-    &.button-secondary {
-        background-color: transparent;
-        color: $colors-oc-gray-9;
-        border: 2px solid $colors-oc-gray-9;
-
-        &:hover {
-            background-color: $colors-oc-gray-9;
-            color: $colors-oc-gray-1;
-        }
-    }
 
     &.button-text {
         background-color: transparent;
@@ -51,6 +41,7 @@
             // color: $colors-oc-gray-1;
         }
     }
+
 
     @media screen and (min-width: $breakpoint-desktop) {
         width: -moz-fit-content;

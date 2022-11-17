@@ -8,7 +8,7 @@ body {
       position: absolute;
       background: url('../img/lines-bg.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       top: 64px;
       width: 100%;
       height: 100%;
@@ -19,6 +19,7 @@ body {
     .button {
       background-color: $colors-brand-color-2-700;
       color: $colors-oc-gray-1;
+      border: 2px solid $colors-brand-color-2-700;
 
       &:hover {
         background-color: $colors-brand-color-2-800;
@@ -30,11 +31,38 @@ body {
         border: none;
 
         &:hover {
-          // background-color: $colors-oc-gray-9;
-          // color: $colors-oc-gray-1;
+          background-color: $colors-brand-color-2-700;
+          color: $colors-oc-gray-1;
+          border: 2px solid $colors-brand-color-2-700;
         }
       }
 
+      &.button-secondary {
+        background-color: transparent;
+        color: $colors-oc-gray-1;
+        border: 2px solid $colors-brand-color-2-700;
+
+        &:hover {
+          background-color: $colors-brand-color-2-800;
+          color: $colors-oc-gray-1;
+        }
+      }
+
+      &.button-nav-link {
+        background-color: transparent;
+        color: $colors-oc-gray-1 ;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  body {
+    &.dark {
+      &::after {
+        background-size: contain;
+      }
     }
   }
 }

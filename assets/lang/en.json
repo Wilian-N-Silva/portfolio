@@ -1,13 +1,18 @@
 {
-    "hero-intro": "Hi,</br>i'm <span>Wilian</span>",
-    "hero-lead": "a front-end developer and UI designer based in São Paulo, Brazil",
-    "hero-btn-contact": "Get in touch",
-    "hero-scroll-down": "Scroll down",
-    "section-services": "Services",
-    "section-services-subtitle": "What I do and I like to do!",
-    "section-portfolio": "Portfolio",
-    "section-about": "About",
-    "section-about-me-title": "",
-    "section-about-me-text": "Born in Minas Gerais and raised in São Paulo, I have always been passionate about technology and trying to create something new.<br>Graduated in Informatics at ETEC de Embu and in Computer Science, I continue my studies, focused on front-end development and moving towards UI Design, where I believe that these are two areas that go hand in hand.",
-    "section-contact": "Contact"
+    "language-code": "en",
+    "country-code": "US",
+    "strings": {
+        "hero-intro": "Hi,</br>i'm <span>Wilian</span>",
+        "hero-lead": "a front-end developer and UI designer based in São Paulo, Brazil",
+        "hero-btn-contact": "Get in touch",
+        "hero-scroll-down": "Scroll down",
+        "section-services": "Services",
+        "section-services-subtitle": "What I do and I like to do!",
+        "section-portfolio": "Portfolio",
+        "section-about": "About",
+        "section-about-me-title": "Who is me?",
+        "section-about-me-text-p-1": "Born in Minas Gerais and raised in São Paulo, I have always been passionate about technology and trying to create something new.",
+        "section-about-me-text-p-2": "Graduated in Informatics at ETEC de Embu and in Computer Science, I continue my studies, focused on front-end development and moving towards UI Design, where I believe that these are two areas that go hand in hand.",
+        "section-contact": "Contact"
+    }
 }
