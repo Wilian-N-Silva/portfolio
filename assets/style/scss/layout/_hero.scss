@@ -21,7 +21,7 @@
             & .texts {
                 margin-bottom: 2rem;
 
-                & h1 {
+                & .intro {
                     color: $colors-oc-gray-1;
 
                     & span {
@@ -44,7 +44,7 @@
                     }
                 }
 
-                & p {
+                & .lead {
                     max-width: 40ch;
                 }
             }
