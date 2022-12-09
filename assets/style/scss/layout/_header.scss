@@ -33,6 +33,7 @@ header {
 
         & .logo img {
             height: 64px;
+            width: 100%;
         }
 
         & ul,
@@ -43,6 +44,24 @@ header {
             & button {
                 & img {
                     height: 40px;
+                }
+            }
+        }
+
+        & .options #btn-language-selector {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            cursor: pointer;
+            color: $colors-oc-gray-5;
+            transition: .3s;
+
+            & span {
+                transition: .3s;
+
+                &.active {
+                    color: $colors-oc-gray-1;
+                    font-weight: 700;
+                    font-size: 1.125rem;
                 }
             }
         }
@@ -63,6 +82,7 @@ header {
             & ul,
             & .options {
                 display: flex;
+                justify-content: center;
             }
 
             #btn-navigation-toggle {
@@ -80,8 +100,6 @@ header {
                     }
                 }
             }
-
-
         }
     }
 
@@ -104,23 +122,6 @@ header {
                 align-items: center;
             }
 
-            & .options #btn-language-selector {
-                padding: 1rem 2rem;
-                background-color: transparent;
-                cursor: pointer;
-                color: $colors-oc-gray-5;
-                transition: .3s;
-
-                & span {
-                    transition: .3s;
-
-                    &.active {
-                        color: $colors-oc-gray-1;
-                        font-weight: 700;
-                        font-size: 1.125rem;
-                    }
-                }
-            }
 
             & ul li a {
                 position: relative;

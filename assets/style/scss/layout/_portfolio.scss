@@ -11,7 +11,7 @@
         ul.list {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 4rem;
 
             li {
                 // display: flex;
@@ -50,6 +50,10 @@
                         flex-direction: column;
                         width: 100%;
                         gap: 1rem;
+
+                        a {
+                            width: 100%;
+                        }
                     }
                 }
             }

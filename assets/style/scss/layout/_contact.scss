@@ -1,1 +1,33 @@
-#contact {}
+#contato {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  width: 100%;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .content-column.network {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      max-width: 40ch;
+
+      & .social {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        & ul {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
