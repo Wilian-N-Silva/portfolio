@@ -1,0 +1,50 @@
+.button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    background-color: $colors-oc-gray-9;
+    border: 2px solid $colors-oc-gray-9;
+    cursor: pointer;
+    color: $colors-oc-gray-1;
+
+    &:hover {
+        background-color: $colors-oc-gray-8;
+        transition: background-color .3s;
+        // transform: scale(1.05);
+    }
+
+    &:active {
+        // transform: scale(.95);
+    }
+
+    &.button-secondary {
+        background-color: transparent;
+        color: $colors-oc-gray-9;
+        border: 2px solid $colors-oc-gray-9;
+
+        &:hover {
+            background-color: $colors-oc-gray-9;
+            color: $colors-oc-gray-1;
+
+        }
+    }
+
+
+    &.button-text {
+        background-color: transparent;
+        color: $colors-oc-gray-9;
+        border: none;
+
+        &:hover {
+            // background-color: $colors-oc-gray-9;
+            // color: $colors-oc-gray-1;
+        }
+    }
+
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}

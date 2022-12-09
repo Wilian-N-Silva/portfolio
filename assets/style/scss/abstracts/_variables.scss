@@ -1,0 +1,61 @@
+// DEFAULTS
+$font-family-inter: 'Inter', Helvetica, Arial, sans-serif;
+$font-family-poppins: 'Poppins', Helvetica, Arial, sans-serif;
+
+// FONT SCALING
+$font-scale : 1rem;
+
+$font-scale-up-1 : 1.5rem;
+$font-scale-up-2 : 2rem;
+$font-scale-up-3 : 2.5rem;
+$font-scale-up-4 : 3rem;
+$font-scale-up-5 : 3.5rem;
+$font-scale-up-6 : 4rem;
+$font-scale-up-7 : 4.5rem;
+$font-scale-up-8 : 5rem;
+
+$font-scale-down-1 : 0.875rem;
+$font-scale-down-2 : 0.75rem;
+$font-scale-down-3 : 0.5rem;
+
+// LINE-HEIGHT
+$line-height: 1;
+$line-height-up-1: 1.125;
+$line-height-up-2: 1.25;
+$line-height-up-3: 1.5;
+
+// SPACING
+// SPACING - LAYOUT - 8px
+$spacing-layout-scale: .5rem;
+$spacing-layout-scale-2: 1rem;
+$spacing-layout-scale-3: 1.5rem;
+$spacing-layout-scale-4: 2rem;
+$spacing-layout-scale-5: 2.5rem;
+$spacing-layout-scale-6: 3rem;
+$spacing-layout-scale-7: 3.5rem;
+$spacing-layout-scale-8: 4rem;
+$spacing-layout-scale-9: 4.5rem;
+$spacing-layout-scale-10: 5rem;
+
+// SPACING - ADJUST - 4px
+$spacing-adjust-scale: .25rem;
+$spacing-adjust-scale-2: .5rem;
+$spacing-adjust-scale-3: .75rem;
+$spacing-adjust-scale-4: 1rem;
+$spacing-adjust-scale-5: 1.25rem;
+$spacing-adjust-scale-6: 1.5rem;
+$spacing-adjust-scale-7: 1.75rem;
+$spacing-adjust-scale-8: 2rem;
+$spacing-adjust-scale-9: 2.25rem;
+$spacing-adjust-scale-10: 2.50rem;
+
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
+
+$container-max-w-mobile: 272px;
+$container-max-w-tablet: 672px;
+$container-max-w-desktop: 1216px;
+
+$default-padding: 5rem 0;
+$default-padding-sm: 5rem 0;

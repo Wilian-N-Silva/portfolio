@@ -1,0 +1,166 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+    transition: .3s;
+
+    & nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        color: $colors-oc-gray-1;
+
+        & #btn-navigation-toggle {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            cursor: pointer;
+
+            & span {
+                background-color: $colors-oc-gray-1;
+                height: 4px;
+                border-radius: 4px;
+                width: 48px;
+                transition: .3s;
+            }
+        }
+
+        & .logo img {
+            height: 64px;
+            width: 100%;
+        }
+
+        & ul,
+        & .options {
+            display: none;
+            width: 100%;
+
+            & button {
+                & img {
+                    height: 40px;
+                }
+            }
+        }
+
+        & .options #btn-language-selector {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            cursor: pointer;
+            color: $colors-oc-gray-5;
+            transition: .3s;
+
+            & span {
+                transition: .3s;
+
+                &.active {
+                    color: $colors-oc-gray-1;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        & ul {
+            flex-direction: column;
+            padding: 1rem 0;
+            gap: 1rem;
+
+            & li {
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        &.active {
+
+            & ul,
+            & .options {
+                display: flex;
+                justify-content: center;
+            }
+
+            #btn-navigation-toggle {
+                & span {
+                    &:nth-child(1) {
+                        transform: translateY(16px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-16px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &.bg-active {
+        background-color: $colors-brand-color-1-500;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        nav {
+            #btn-navigation-toggle {
+                display: none;
+            }
+
+            & ul,
+            & .options {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                gap: 2rem;
+                align-items: center;
+            }
+
+
+            & ul li a {
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: $colors-oc-gray-1;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .3s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@keyframes hamburguer-menu-span-1 {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(16px);
+    }
+
+    100% {
+        transform: translateY(16px) rotate(-45deg)
+    }
+}
