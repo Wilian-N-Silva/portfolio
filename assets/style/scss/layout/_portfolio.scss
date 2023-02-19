@@ -1,91 +1,93 @@
 #portfolio {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+
+  & .container {
     display: flex;
-    align-items: center;
-    padding: 5rem 0;
+    gap: 2rem;
+    flex-direction: column;
 
-    & .container {
-        display: flex;
+    ul.list {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      gap: 4rem;
+
+      li {
+        // display: flex;
+        // flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 2rem;
-        flex-direction: column;
 
-        ul.list {
+        & .preview {
+          img {
+            width: 100%;
+          }
+        }
+
+        & .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 1rem;
+
+          & .texts {
             display: flex;
             flex-direction: column;
-            gap: 4rem;
+            gap: 2rem;
+            max-width: 73ch;
 
-            li {
-                // display: flex;
-                // flex-direction: column;
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 2rem;
-
-                & .preview {
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                & .info {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 1rem;
-
-                    & .texts {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 2rem;
-                        max-width: 73ch;
-
-                        & .title {
-                            & h4 {
-                                margin-bottom: 1rem;
-                            }
-                        }
-                    }
-
-                    & .links {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        gap: 1rem;
-
-                        a {
-                            width: 100%;
-                        }
-                    }
-                }
+            & .title {
+              & h4 {
+                margin-bottom: 1rem;
+              }
             }
-        }
-    }
+          }
 
-    @media screen and (min-width: $breakpoint-tablet) {
-        .container {
-            ul.list {
-                li {
-                    & .info {
-                        & .links {
-                            flex-direction: row;
+          & .links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
 
-                        }
-                    }
-                }
+            a {
+              width: 100%;
             }
+          }
         }
+      }
     }
+  }
 
-    @media screen and (min-width: $breakpoint-desktop) {
-        .container {
-            gap: 4rem;
-
-            ul.list {
-                flex-direction: row;
-
-                li {
-                    grid-template-columns: 1fr 1fr;
-                }
+  @media screen and (min-width: $breakpoint-tablet) {
+    .container {
+      ul.list {
+        li {
+          & .info {
+            & .links {
+              flex-direction: row;
             }
+          }
         }
+      }
     }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    .container {
+      gap: 4rem;
+
+      ul.list {
+        flex-direction: row;
+
+        li {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
 }
